@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\RadiusAccounting;
 use Illuminate\Http\Request;
 
 class RadiusAccountingController extends Controller
@@ -13,7 +14,9 @@ class RadiusAccountingController extends Controller
      */
     public function index()
     {
-        //
+        $accounting = RadiusAccounting::orderBy('acctstarttime','desc')->get();
+        
+        return view('radius.accounting.index', compact('accounting'));
     }
 
     /**
@@ -80,5 +83,10 @@ class RadiusAccountingController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function delete(Request $request)
+    {
+        # code...
     }
 }

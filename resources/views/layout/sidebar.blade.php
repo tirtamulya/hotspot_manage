@@ -44,8 +44,8 @@
             </span>
         </a>
         <ul class="treeview-menu">
-          <li><a href="#">Check</a></li>
-          <li><a href="#">Accounting</a></li>
+          <li><a href="{{ route('radius.check.index') }}">Check</a></li>
+          <li><a href="{{ route('radius.accounting.index') }}">Accounting</a></li>
         </ul>
       </li>
     </ul>

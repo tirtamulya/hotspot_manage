@@ -39,7 +39,6 @@
 					<thead>
 						<tr>
 							<th data-sortable="false"><input type="checkbox" id="check_all"/></th>
-							<th>Username</th>
 	            			<th>Name</th>
 	            			<th>Email</th>
 	            			<th>Hotspot</th>
@@ -52,7 +51,6 @@
 							<td>
 								<input type="checkbox" id="idTableUser" value="{{ $u->id }}" name="id[]" class="checkin">
 							</td>
-							<td>{{ $u->username }}</td>
 							<td>{{ $u->name }}</td>
 							<td>{{ $u->email }}</td>
 							<td>{{ $u->hotspot->name }}</td>

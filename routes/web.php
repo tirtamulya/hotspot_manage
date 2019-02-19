@@ -48,6 +48,7 @@ Route::group([
 
 
 	Route::post('radius/check/delete', ['as'=>'radius.check.delete', 'uses'=>'RadiusCheckController@delete']);
+	Route::post('radius/accounting/delete', ['as'=>'radius.accounting.delete', 'uses'=>'RadiusAccountingController@delete']);
 
 
 	Route::resource('radius/setting','RadiusSettingController',['as'=>'radius']);
